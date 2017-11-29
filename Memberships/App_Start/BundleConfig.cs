@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace Memberships
 {
@@ -26,6 +25,23 @@ namespace Memberships
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/admin").Include(
+                     "~/Scripts/AdminMenu.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ui").Include(
+                "~/Scripts/carret.js",
+                "~/Scripts/RegisterCode.js",
+                "~/Scripts/JWPlayer.js"));
+
+            bundles.Add(new StyleBundle("~/Content/membership").Include(
+                      "~/Content/navbar.css",
+                      "~/Content/thumbnails.css",
+                      "~/Content/ProductContent.css",
+                      "~/Content/RegisterCode.css",
+                      "~/Content/carret.css"));
+
+
         }
     }
 }

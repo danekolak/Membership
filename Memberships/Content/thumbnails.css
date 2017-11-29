@@ -1,0 +1,86 @@
+﻿.headline {
+    margin: 0 0 5px;
+    border-bottom: 2px solid #72c02c;
+}
+
+.thumbnail {
+    padding: 55px;
+    margin: 0 30px;
+}
+
+    .thumbnail .tag {
+        padding: 1px 1px;
+        right: -5px;
+        color: #fff;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .thumbnail thumbnail-container {
+        position: relative;
+    }
+
+    .thumbnail .text-tag {
+        background-color: #72c02c;
+    }
+
+    .thumbnail .content-tag {
+        background-color: #f79a47;
+        top: 5px;
+    }
+
+    .thumbnail .thumbnail-img-container {
+        overflow: hidden;
+    }
+
+    .thumbnail .thumbnail-img {
+        width: 100%;
+        height: auto;
+        transition: all 0.8s ease-in-out 0s;
+    }
+
+    .thumbnail a, a:focus, a:hover, a:active {
+        outline: 0 none !important;
+        text-decoration: none;
+    }
+
+    .thumbnail > a, a:focus, a:hover, a:active {
+        color: #72c02c;
+    }
+
+@media screen and (min-width: 480px) {
+    .thumbnail {
+        max-width: 260px;
+    }
+}
+
+.thumbnail .hover-effect {
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.thumbnail a.text-tag:hover {
+    box-shadow: 0 0 0 2px #5fb611;
+}
+
+.thumbnail:hover a.text-tag {
+    right: 5px;
+    transform: scale(0.6) rotate(-90deg);
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 88px #555;
+    transition: box-shadow 0.2s ease-in-out 0s;
+    transform: scale(1.1) rotate(30deg);
+}
+
+    .thumbnail:hover img {
+        box-shadow: 0 0 88px #555;
+        transition: box-shadow 0.2s ease-in-out 0s;
+        transform: scale(0.8) rotate(-90deg);
+    }
+
+
+.caption:hover {
+    transition: box-shadow 0.2s ease-in-out 0s;
+    transform: scale(1.1) rotate(-90deg);
+}

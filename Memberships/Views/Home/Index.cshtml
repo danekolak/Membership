@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Memberships.Models.ThumbnailAreaModel>
+﻿
+@model IEnumerable<Memberships.Models.ThumbnailAreaModel>
+@using Memberships.Models
 @{
     ViewBag.Title = "Home Page";
 }
@@ -19,6 +21,8 @@
         </div>
         //Left colomn
         <div class="col-lg-3 col-md-4 col-sm-5">
+            @Html.Partial("_RegisterUserPartial", new RegisterUserModel { Email = "", Name = "", Password = "" })
+            @Html.Partial("_ForgotPasswordPanelPartial", new ForgotPasswordViewModel { Email = "" })
         </div>
     }
 </div>

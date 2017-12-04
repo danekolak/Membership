@@ -16,7 +16,7 @@
     $(".register-code-panel button").click(function (e) {
         $(".register-code-panel .alert").addClass('hidden');
 
-        if (code.val().length == 0) {
+        if (code.val().length === 0) {
             displayMessage(false, "Enter a code");
             return;
         }

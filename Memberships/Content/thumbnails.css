@@ -40,7 +40,7 @@
     }
 
     .thumbnail a, a:focus, a:hover, a:active {
-        outline: 0 none !important;
+        outline: 0 none;
         text-decoration: none;
     }
 
